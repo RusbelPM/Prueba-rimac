@@ -1,0 +1,35 @@
+
+.header{
+  display:flex;
+  align-items: $header-center;
+  justify-content: $header-center;
+  width: $header-width;
+  height: 64px;
+  &__content{
+    display:flex;
+    flex-direction: row;
+    justify-content: $header-sb;
+    align-items: $header-center;
+    max-width: $max-width-content;
+    padding: 0px 32px;
+    width: $header-width;
+    box-sizing: border-box;
+    &img{
+      width: 73px;
+      height: 36px;
+    }
+    &p{
+      margin: 0;
+    }
+  }
+}
+
+
+@media ($mmx: $brp) {
+  .header{
+    &__content{
+      flex-direction: row;
+      padding:0 24px;
+    }
+  };
+}

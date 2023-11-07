@@ -1,0 +1,47 @@
+
+.atomicInput{
+  font-family: $font1;
+  width: 100%;
+  max-width: 365px;
+  height: auto;
+  max-height: 56px;
+  border: 1px solid $input-border-color;
+  border-radius: 8px 8px 8px 8px;
+  background-color: $white;
+  //margin-bottom: 24px;
+  //border-radius: 8px;
+  &__form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    & label{
+      font-size: $label-font-size;
+      height: 16px;
+      font-weight: $label-font-weight-normal;
+      color:$label-font-color;
+    }
+    & input{
+      font-size: $input-font-size;
+      height: 22px;
+      font-weight: $label-font-weight-normal;
+      color:$input-font-color;
+      border:$input-border;
+      outline:$input-border;
+      &[type='number']::-webkit-inner-spin-button,[type='number']::-webkit-outer-spin-button{
+          -webkit-appearance: none;
+          appearance: none;
+          margin: 0;
+      }
+    }
+  }
+}
+
+
+@media ($mmx: $brp) {
+  .atomicInput{
+    min-width: 156px;
+    max-width: unset;
+  }
+}
+
+
